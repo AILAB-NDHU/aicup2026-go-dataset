@@ -12,7 +12,7 @@ tar xf aicup2026_go_training.tar.xz
 
 ```
 aicup2026_go_training.tar.xz   214 MB   解壓後約 1.3 GB
-SHA-256  bcc9c1354137da1ebe9edbd47331d651998914cdbe91798af08b87976be1b69a
+SHA-256  959ebc602b9638d665cb063a6269e0d5aef73956b77913e725763eb335ced94b
 ```
 
 ## 內容
