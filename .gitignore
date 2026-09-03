@@ -1,0 +1,5 @@
+# 資料檔走 Releases，不進版控
+*.tar.xz
+*.tar.gz
+*.zip
+training/
