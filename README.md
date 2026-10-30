@@ -7,13 +7,18 @@
 資料檔請由 [Releases](../../releases) 取得。
 
 ```bash
-tar xf aicup2026_go_training.tar.xz
+tar xf aicup2026_go_training_v1.1.tar.xz
 ```
 
 ```
-aicup2026_go_training.tar.xz   214 MB   解壓後約 1.3 GB
-SHA-256  959ebc602b9638d665cb063a6269e0d5aef73956b77913e725763eb335ced94b
+aicup2026_go_training_v1.1.tar.xz   210 MB   解壓後約 1.3 GB
+SHA-256  e0880a3e8723f776e931ecce7fbc09eace9a0dd42b18a1d8ebac4a1628d2395e
 ```
+
+## 版本
+
+- v1.1：每盤棋譜的 `sgf_content` 補上讓子資訊 `HD[n]`，其餘與 v1.0 相同。
+- v1.0：初版。
 
 ## 內容
 
@@ -37,11 +42,11 @@ training/
 | `game_id` | 棋譜編號 |
 | `rank` | 該玩家的棋力等級，等於檔名的等級 |
 | `color` | 該玩家在這盤的執色，`B` 或 `W` |
-| `sgf_content` | 單行 SGF，只含棋盤大小與落子 |
+| `sgf_content` | 單行 SGF，含棋盤大小、讓子資訊 `HD[n]` 與落子 |
 
 樣本見 [`sample_train_A.csv`](sample_train_A.csv)。
 
-`sgf_content` 內含逗號，請以標準 CSV 解析器讀取：
+`sgf_content` 欄位內容較長，請以標準 CSV 解析器讀取：
 
 ```python
 import pandas as pd
